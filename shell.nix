@@ -1,20 +1,15 @@
 { pkgs ? import <nixpkgs> { } }:
 pkgs.mkShell {
   buildInputs = with pkgs.buildPackages; [
-    git
-    
-    rustup
-    openssl
+    nodejs_23
   ];
 
   shellHook =
     ''
-      rustup update stable
-
+      npm install
       clear
-      rustc --version
-      git --version
-      echo "Environment ready" 
+      echo "Environment ready"
+      # npm start
     '';
 
 }

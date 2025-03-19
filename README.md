@@ -3,7 +3,7 @@
 - [Software Onboarding](#software-onboarding)
   - [Introduction](#introduction)
   - [Setting up](#setting-up)
-    - [Windows](#windows)
+    - [Windows (10/11)](#windows-1011)
     - [Mac](#mac)
     - [Linux](#linux)
       - [Ubuntu/Mint](#ubuntumint)
@@ -37,7 +37,7 @@ Before getting started, make sure you have an appropriate Github account set up 
 
 We generally recommend that your Github account is not tied to only your school email and instead have a personal, professional Github account for use in projects such as this. 
 
-### Windows
+### Windows (10/11)
 
 ### Mac
 

@@ -1,0 +1,44 @@
+.token-grid-container,
+.token-grid-wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.token-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .token-grid-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .token-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items on incomplete rows */
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Ensure each item takes up roughly a quarter of the width minus the gap */
+  .token-grid-item {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
+  }
+  
+  
+.token-grid-item > * {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

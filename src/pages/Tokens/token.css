@@ -1,0 +1,106 @@
+/* Ensures Smooth Scrolling Behavior */
+.token-carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Token Carousel */
+  .token-carousel {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Track & Thumb */
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom Scrollbar (Chrome, Edge, Safari) */
+  .token-carousel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .token-carousel::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #555, #888); /* Gradient effect */
+    border-radius: 4px;
+  }
+  
+  .token-carousel::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Token Container */
+  .token {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: white;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+  }
+  
+  /* Smooth Hover Scaling */
+  .token:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .token-image-container {
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; /* Centers the image horizontally */
+    height: 125px; /* Keeps the total height fixed */
+    padding: 15px 0; /* Adds padding without changing token size */
+    background-color: white; /* Background in case of transparency */
+}
+
+/* Token Image */
+.token-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
+}
+
+  
+  /* Text Content */
+  .token-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  /* Date Styling */
+  .token-date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 5px;
+  }
+  
+  /* Title Styling */
+  .token-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  
+  /* Summary Styling */
+  .token-summary {
+    font-size: 14px;
+    color: #555;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
