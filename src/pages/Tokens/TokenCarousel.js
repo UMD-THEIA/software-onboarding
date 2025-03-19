@@ -1,25 +1,33 @@
 import React, { useRef } from "react";
 import Token from "./Token";
-import "./token.css";
-import '../../App.css'
-
+import "./carousel.css";
+import '../../App.css';
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const TokenCarousel = ({ tokens }) => {
-    const carouselRef = useRef(null);
-  
-    const handleWheelScroll = (event) => {
-      event.preventDefault();
-      if (carouselRef.current) {
-        carouselRef.current.scrollBy({
-          left: event.deltaY * 1.5, // Adjusts scroll speed
-          behavior: "smooth",
-        });
-      }
-    };
-  
-    return (
+  const carouselRef = useRef(null);
+
+  const scrollAmount = 320; // Adjust based on token width + gap
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="token-carousel-wrapper">
+      <button className="carousel-arrow left" onClick={scrollLeft}>
+        <FaChevronLeft />
+      </button>
       <div className="token-carousel-container">
-        <div className="token-carousel" ref={carouselRef} onWheel={handleWheelScroll}>
+        <div className="token-carousel" ref={carouselRef}>
           {tokens.map((token, index) => (
             <Token
               key={index}
@@ -32,8 +40,11 @@ const TokenCarousel = ({ tokens }) => {
           ))}
         </div>
       </div>
-    );
-  };
-  
-  export default TokenCarousel;
-  
+      <button className="carousel-arrow right" onClick={scrollRight}>
+        <FaChevronRight />
+      </button>
+    </div>
+  );
+};
+
+export default TokenCarousel;

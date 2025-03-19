@@ -3,10 +3,13 @@ import './navbar.css'
 import '../App.css'
 
 export default function Navbar() {
+  const imagePath = process.env.PUBLIC_URL + "/images/SATDEV-LOGO-EXPORT 1.png";
+
+
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <img src="/images/SATDEV-LOGO-EXPORT 1.png" class="patch" alt=""/> THEIA Software
+        <img src={imagePath} class="patch" alt=""/> THEIA Software
       </Link>
       <ul>
         <CustomLink to="/">Home</CustomLink>

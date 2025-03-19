@@ -18,7 +18,7 @@ const Token = ({ image, title, date, summary, url }) => {
   return (
     <div className="token" onClick={handleClick}>
       <div className="token-image-container">
-        <img src={image} alt={title} className="token-image" />
+        <img src={process.env.PUBLIC_URL + image} alt={title} className="token-image" />
       </div>
       <div className="token-content">
         <div className="token-info">

@@ -54,6 +54,27 @@ const allGuides = [
     summary: "A brief walkthrough of Docker",
     url: "/docker",
   },
+  {
+    image: "/images/kubos.png",
+    title: "Introduction to Kubos",
+    date: "March 19, 2025",
+    summary: "A brief walkthrough of Docker",
+    url: "/kubos",
+  },
+  {
+    image: "/images/git.png",
+    title: "Introduction to Git/Github",
+    date: "March 19, 2025",
+    summary: "A guide on how to use Git/Github",
+    url: "/github",
+  },
+  {
+    image: "/images/THEIA_PATCH_EXPORT 1.png",
+    title: "Walkthrough of THEIA Software Codebase",
+    date: "March 19, 2025",
+    summary: "A breakdown of the code we use",
+    url: "/codebase",
+  },
 
 ];
 

@@ -3,11 +3,14 @@ import "./HeroBanner.css";
 import "../../App.css";
 
 const HeroBanner = ({ title, subtitle }) => {
+
+  const gridpath = process.env.PUBLIC_URL + "/images/grid-pattern.png";
+
   return (
     <section className="hero-banner">
       <div className="hero-banner__background">
         <img
-          src="/images/grid-pattern.png"
+          src={gridpath}
           alt="Background Pattern"
           className="hero-banner__image"
         />

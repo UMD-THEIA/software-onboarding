@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, HashRouter } from "react-router-dom"
 
 import './App.css';
 import Navbar from './Navbar/Navbar.js'
@@ -25,36 +25,36 @@ import KubosBuilder from "./pages/codebase_pages/kubos-builder.js";
 import CodebaseLibs from "./pages/codebase_pages/libs.js";
 
 
-
 function App() {
   return (
-    <>
+    <HashRouter>
       <Navbar />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/setup" element={<Setup />}>
-            <Route path="" element={<SetupHome />} />
+          <Route path="setup" element={<Setup />}>
+            <Route index element={<SetupHome />} />
             <Route path="arch" element={<Arch />} />
             <Route path="mac" element={<Mac />} />
             <Route path="nixos" element={<Nixos />} />
             <Route path="ubuntu" element={<Ubuntu />} />
             <Route path="windows" element={<Windows />} />
           </Route>
-          <Route path="/rust" element={<Rust />} />
-          <Route path="/docker" element={<Docker />} />
-          <Route path="/github" element={<Github />} />
-          <Route path="/codebase" element={<Codebase />}>
-            <Route path="" element={<CodebaseHome />}/>
-            <Route path="docker-kubos" element={<DockerKubos />}/>
-            <Route path="flight-software" element={<FlightSoftware />}/>
-            <Route path="hardware-simulators" element={<HardwareSimulators />}/>
-            <Route path="kubos-builder" element={<KubosBuilder />}/>
-            <Route path="libs" element={<CodebaseLibs />}/>
+          <Route path="rust" element={<Rust />} />
+          <Route path="docker" element={<Docker />} />
+          <Route path="github" element={<Github />} />
+          <Route path="codebase" element={<Codebase />}>
+            <Route index element={<CodebaseHome />} />
+            <Route path="docker-kubos" element={<DockerKubos />} />
+            <Route path="flight-software" element={<FlightSoftware />} />
+            <Route path="hardware-simulators" element={<HardwareSimulators />} />
+            <Route path="kubos-builder" element={<KubosBuilder />} />
+            <Route path="libs" element={<CodebaseLibs />} />
           </Route>
         </Routes>
       </div>
-    </>
-  )
+    </HashRouter>
+  );
 }
+
 export default App;
