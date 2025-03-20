@@ -58,7 +58,7 @@ const allGuides = [
     image: "/images/kubos.png",
     title: "Introduction to Kubos",
     date: "March 19, 2025",
-    summary: "A brief walkthrough of Docker",
+    summary: "A brief walkthrough of Kubos",
     url: "/kubos",
   },
   {
@@ -98,7 +98,7 @@ const importantGuides = [
     image: "/images/kubos.png",
     title: "Introduction to Kubos",
     date: "March 19, 2025",
-    summary: "A brief walkthrough of Docker",
+    summary: "A brief walkthrough of Kubos",
     url: "/kubos",
   },
   {
