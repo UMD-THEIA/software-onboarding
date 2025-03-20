@@ -13,7 +13,7 @@ Creates a website that aims provide a comprehensive onboarding tutorial
 - [x] Kubos Tutorial (copy from Notion)
 - [ ] Walkthrough of THEIA Codebase
   - [x] Complete skeleton
-  - [ ] Getting started with docker-kubos
+  - [x] Getting started with docker-kubos
   - [ ] Elements of flight-software
     - [ ] Breakdown of the provided libraries (flight-software/libs)
   - [ ] A rundown of all built simulators in hardware-simulators
