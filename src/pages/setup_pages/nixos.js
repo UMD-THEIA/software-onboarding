@@ -56,14 +56,16 @@ pkgs.mkShell {
       <h3 className='setupText'>Setting up Docker</h3>
       <p className='setupText'>Add the following to <code>configuration.nix</code>:</p>
       <CodeBlock language="nix" code={dockerConfig} />
+      <p className='setupText'>Then run <code>sudo nixos-rebuild switch</code>. You may have to restart after this step.</p>
       <h3 className='setupText'>Setting up Git</h3>
       <p className='setupText'>To set up Git, add the following lines to your configuration.nix:</p>
       <CodeBlock language="nix" code={gitSetup} />
+      <p className='setupText'>Then run <code>sudo nixos-rebuild switch</code>.</p>
+
       <GithubSSH />
       <h3 className='setupText'>Setting up Development Environment</h3>
-      <p className='setupText'>In NixOS, setting up your programming environment is very simple. For most situations, the provided shell.nix file creates an appropriate development environment:</p>
-      <CodeBlock language="nix" code={gitSetup} />
-      <p className='setupText'>Just run <code>nix-shell</code> in a directory with a <code>shell.nix</code> file, and it will temporarily make the listed 
+     
+      <p className='setupText'> In NixOS, setting up your programming environment is very simple.Just run <code>nix-shell</code> in a directory with a <code>shell.nix</code> file, and it will temporarily make the listed 
       programs available in your shell without installing them system-wide. This provided <code>shell.nix</code> file should be sufficient for almost any 
       task for the team.</p>
       <CodeBlock language="nix" code={nixshell} />
