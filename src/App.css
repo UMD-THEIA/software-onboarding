@@ -8,3 +8,7 @@
   body {
     font-family: 'iawriter-mono', monospace;
   }
+
+  .leftText{
+    text-align: left;
+}

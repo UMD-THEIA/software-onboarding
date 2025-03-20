@@ -1,4 +1,5 @@
 import { Route, Routes, HashRouter } from "react-router-dom"
+import React, { useEffect } from "react"
 import ScrollToTop from "./ScrollToTop";
 
 import './App.css';
@@ -9,6 +10,8 @@ import Rust from "./pages/rust.js"
 import Docker from "./pages/docker.js"
 import Github from "./pages/github.js"
 import Setup from "./pages/setup.js"
+import Kubos from "./pages/kubos.js"
+import LinuxTutorial from "./pages/linux.js"
 import Codebase from "./pages/codebase.js"
 
 import SetupHome from "./pages/setup_pages/home.js"
@@ -27,6 +30,21 @@ import CodebaseLibs from "./pages/codebase_pages/libs.js";
 
 
 function App() {
+
+  useEffect(() => {
+    document.title = "THEIA Software"; // Change tab title
+
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "THEIA's Software Onboarding Guide");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "THEIA's Software Onboarding Guide";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <HashRouter>
       <ScrollToTop />
@@ -47,13 +65,15 @@ function App() {
           <Route path="docker" element={<Docker />} />
           <Route path="github" element={<Github />} />
           <Route path="codebase" element={<Codebase />}>
-            <Route index element={<CodebaseHome />} />
+            <Route index="" element={<CodebaseHome />} />
             <Route path="docker-kubos" element={<DockerKubos />} />
             <Route path="flight-software" element={<FlightSoftware />} />
             <Route path="hardware-simulators" element={<HardwareSimulators />} />
             <Route path="kubos-builder" element={<KubosBuilder />} />
             <Route path="libs" element={<CodebaseLibs />} />
           </Route>
+          <Route path="kubos" element={<Kubos />} />
+          <Route path="linuxtutorial" element={<LinuxTutorial />} />
         </Routes>
       </div>
     </HashRouter>

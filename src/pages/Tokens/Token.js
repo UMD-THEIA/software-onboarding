@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import './token.css'
 import '../../App.css'
 
@@ -22,8 +22,8 @@ const Token = ({ image, title, date, summary, url }) => {
       </div>
       <div className="article-token-content">
         <div className="article-token-info">
-          <p className="article-token-date">{date}</p>
           <p className="article-token-title">{title}</p>
+          <p className="article-token-date">{date}</p>
           <p className="article-token-summary">{summary}</p>
         </div>
       </div>
