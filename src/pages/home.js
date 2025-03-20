@@ -62,20 +62,19 @@ const allGuides = [
     url: "/kubos",
   },
   {
-    image: "/images/git.png",
-    title: "Introduction to Git/Github",
-    date: "March 19, 2025",
-    summary: "A guide on how to use Git/Github",
-    url: "/github",
-  },
-  {
     image: "/images/THEIA_PATCH_EXPORT 1.png",
     title: "Walkthrough of THEIA Software Codebase",
     date: "March 19, 2025",
     summary: "A breakdown of the code we use",
     url: "/codebase",
   },
-
+  {
+    image: "/images/git.png",
+    title: "Introduction to Git/Github",
+    date: "March 19, 2025",
+    summary: "A guide on how to use Git/Github",
+    url: "/github",
+  },
 ];
 
 
@@ -101,19 +100,20 @@ const importantGuides = [
     summary: "A brief walkthrough of Kubos",
     url: "/kubos",
   },
-  {
-    image: "/images/git.png",
-    title: "Introduction to Git/Github",
-    date: "March 19, 2025",
-    summary: "A guide on how to use Git/Github",
-    url: "/github",
-  },
+
   {
     image: "/images/THEIA_PATCH_EXPORT 1.png",
     title: "Walkthrough of THEIA Software Codebase",
     date: "March 19, 2025",
     summary: "A breakdown of the code we use",
     url: "/codebase",
+  },
+  {
+    image: "/images/git.png",
+    title: "Introduction to Git/Github",
+    date: "March 19, 2025",
+    summary: "A guide on how to use Git/Github",
+    url: "/github",
   },
   {
     image: "/images/rustacean-banner.png",
@@ -135,10 +135,10 @@ export default function Home() {
       />
 
       <h2>Important Guides</h2>
-      <TokenCarousel tokens={importantGuides} />
+      <TokenCarousel tokens={importantGuides} useMiniToken={false} />
 
       <h2>All Guides</h2>
-      <TokenGrid tokens={allGuides} />
+      <TokenGrid tokens={allGuides} useMiniToken={false} />
     </div>
   );
 }

@@ -47,7 +47,7 @@ export default function SetupHome() {
   return (
     <>
       <p>Please select one of our pre-supported OSes to set up with.<br /> If you use a different OS we may not be able to help you.</p>
-      <TokenCarousel tokens={setupGuides} />
+      <TokenCarousel tokens={setupGuides} useMiniToken={false} />
     </>
 
   );
