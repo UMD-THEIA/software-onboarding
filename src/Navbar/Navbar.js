@@ -14,8 +14,8 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/setup">Setup</CustomLink>
-        <CustomLink to="/rust">Rust</CustomLink>
         <CustomLink to="/docker">Docker</CustomLink>
+        <CustomLink to="/codebase">Codebase</CustomLink>
         <CustomLink to="/github">Github</CustomLink>
 
       </ul>

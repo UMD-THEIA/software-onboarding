@@ -9,11 +9,7 @@ import {
   materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const CodeBlock = ({ language, code }) => {
-  return (
-    <SyntaxHighlighter language={language} style={materialDark}>
-      {code}
-    </SyntaxHighlighter>
-  );
+  return <SyntaxHighlighter language={language} style={materialDark}>{code}</SyntaxHighlighter>;
 };
 
 export default CodeBlock;
