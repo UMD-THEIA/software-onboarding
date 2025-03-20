@@ -60,23 +60,3 @@
     right: 10px;
 }
 
-/* Token Container */
-.token {
-    flex: 0 0 auto;
-    width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    background-color: white;
-    scroll-snap-align: center;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-/* Smooth Hover Scaling */
-.token:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}

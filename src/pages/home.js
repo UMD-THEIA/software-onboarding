@@ -21,10 +21,10 @@ const allGuides = [
   },
   {
     image: "/images/ubuntu.png",
-    title: "Setting up ubuntu for Our Project",
+    title: "Setting up Ubuntu for Our Project",
     date: "March 19, 2025",
     summary: "How to configure Ubuntu with Docker, Git, and Rust to work on our codebase.",
-    url: "/setup/mac",
+    url: "/setup/ubuntu",
   },
   {
     image: "/images/arch.png",

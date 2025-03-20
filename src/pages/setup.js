@@ -5,8 +5,8 @@ export default function Setup() {
 
   return (
     <div>
-      <h1>Homepage for Setting up Development Environment</h1>
-      <Outlet /> {/* This will render nested routes */}
+      <h1>How to set up your Development Environment</h1>
+      <Outlet />
     </div>
   );    
   }

@@ -1,0 +1,23 @@
+/* General container */
+
+.setupText{
+    text-align: left;
+}
+ 
+  /* Code blocks */
+  pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+  }
+  
+  /* Inline code */
+  code {
+    font-family: "Courier New", monospace;
+    background-color: #e6e6e6;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }

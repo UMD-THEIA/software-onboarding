@@ -1,4 +1,5 @@
 import { Route, Routes, HashRouter } from "react-router-dom"
+import ScrollToTop from "./ScrollToTop";
 
 import './App.css';
 import Navbar from './Navbar/Navbar.js'
@@ -28,6 +29,8 @@ import CodebaseLibs from "./pages/codebase_pages/libs.js";
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
+
       <Navbar />
       <div className="container">
         <Routes>

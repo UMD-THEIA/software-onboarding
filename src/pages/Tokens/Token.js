@@ -16,15 +16,15 @@ const Token = ({ image, title, date, summary, url }) => {
   };
 
   return (
-    <div className="token" onClick={handleClick}>
-      <div className="token-image-container">
-        <img src={process.env.PUBLIC_URL + image} alt={title} className="token-image" />
+    <div className="article-token" onClick={handleClick}>
+      <div className="article-token-image-container">
+        <img src={process.env.PUBLIC_URL + image} alt={title} className="article-token-image" />
       </div>
-      <div className="token-content">
-        <div className="token-info">
-          <p className="token-date">{date}</p>
-          <p className="token-title">{title}</p>
-          <p className="token-summary">{summary}</p>
+      <div className="article-token-content">
+        <div className="article-token-info">
+          <p className="article-token-date">{date}</p>
+          <p className="article-token-title">{title}</p>
+          <p className="article-token-summary">{summary}</p>
         </div>
       </div>
     </div>
