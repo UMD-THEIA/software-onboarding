@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/software-onboarding/static/css/main.c237c84d.css",
-    "main.js": "/software-onboarding/static/js/main.e2f0df0e.js",
+    "main.js": "/software-onboarding/static/js/main.9e7633a1.js",
     "static/media/iAWriterMonoS-Regular.ttf": "/software-onboarding/static/media/iAWriterMonoS-Regular.a04398df60eb673ae5bc.ttf",
     "index.html": "/software-onboarding/index.html",
     "main.c237c84d.css.map": "/software-onboarding/static/css/main.c237c84d.css.map",
-    "main.e2f0df0e.js.map": "/software-onboarding/static/js/main.e2f0df0e.js.map"
+    "main.9e7633a1.js.map": "/software-onboarding/static/js/main.9e7633a1.js.map"
   },
   "entrypoints": [
     "static/css/main.c237c84d.css",
-    "static/js/main.e2f0df0e.js"
+    "static/js/main.9e7633a1.js"
   ]
 }
