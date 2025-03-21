@@ -1,5 +1,4 @@
 import { Route, Routes, HashRouter } from "react-router-dom"
-import React, { useEffect } from "react"
 import ScrollToTop from "./ScrollToTop";
 
 import './App.css';
@@ -30,20 +29,6 @@ import CodebaseLibs from "./pages/codebase_pages/libs.js";
 
 
 function App() {
-
-  useEffect(() => {
-    document.title = "THEIA Software"; // Change tab title
-
-    const metaDescription = document.querySelector("meta[name='description']");
-    if (metaDescription) {
-      metaDescription.setAttribute("content", "THEIA's Software Onboarding Guide");
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = "THEIA's Software Onboarding Guide";
-      document.head.appendChild(meta);
-    }
-  }, []);
 
   return (
     <HashRouter>
