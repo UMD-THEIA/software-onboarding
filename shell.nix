@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> { } }:
 pkgs.mkShell {
   buildInputs = with pkgs.buildPackages; [
-    nodejs_23
+    nodejs_24
   ];
 
   shellHook =

@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import { FaGithub } from "react-icons/fa";
 import './navbar.css'
 import '../App.css'
 
@@ -9,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <img src={imagePath} class="patch" alt=""/> THEIA Software
+        <img src={imagePath} class="patch" alt="" /> THEIA Software
       </Link>
       <ul>
         <CustomLink to="/">Home</CustomLink>
@@ -17,7 +18,7 @@ export default function Navbar() {
         <CustomLink to="/docker">Docker</CustomLink>
         <CustomLink to="/codebase">Codebase</CustomLink>
         <CustomLink to="/github">Github</CustomLink>
-
+        <div className="header-tabs"><a href="https://github.com/UMD-THEIA" target="_blank"><FaGithub size={25} className="ul-icon" /></a></div>
       </ul>
     </nav>
   )
@@ -28,10 +29,12 @@ export function CustomLink({ to, children, ...props }) {
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
 
   return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
+    <div className="header-tabs">
+      <li className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {children}
+        </Link>
+      </li>
+    </div>
   )
 }

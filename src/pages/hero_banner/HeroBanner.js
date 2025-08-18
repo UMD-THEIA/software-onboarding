@@ -11,6 +11,7 @@ const HeroBanner = ({ title, subtitle }) => {
       <div className="hero-banner__background">
         <img
           src={gridpath}
+          draggable={false}
           alt="Background Pattern"
           className="hero-banner__image"
         />
