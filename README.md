@@ -20,3 +20,4 @@ Creates a website that aims provide a comprehensive onboarding tutorial
   - [ ] Using kubos-builder
 - [ ] Rust Tutorial
 - [ ] Linux Tutorial (basic commands)
+- [ ] Bounty Board (for tasks)
