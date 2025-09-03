@@ -1,0 +1,31 @@
+.task-token-carousel-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.task-token-carousel-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: fit-content;
+    max-width: 100%;
+    align-self: flex-start;
+    position: relative;
+    height: 100vh;
+}
+
+.task-token-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.task-token-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.task-token-item {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+}

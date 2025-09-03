@@ -17,8 +17,9 @@ export default function Navbar() {
         <CustomLink to="/setup">Setup</CustomLink>
         <CustomLink to="/docker">Docker</CustomLink>
         <CustomLink to="/codebase">Codebase</CustomLink>
+        <CustomLink to="/bountyboard">Tasks</CustomLink>
         <CustomLink to="/github">Github</CustomLink>
-        <div className="header-tabs"><a href="https://github.com/UMD-THEIA" target="_blank"><FaGithub size={25} className="ul-icon" /></a></div>
+        <div className="header-tabs"><a href="https://github.com/UMD-THEIA" rel="noreferrer" target="_blank"><FaGithub size={25} className="ul-icon" /></a></div>
       </ul>
     </nav>
   )

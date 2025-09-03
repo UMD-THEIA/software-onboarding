@@ -26,6 +26,7 @@ import FlightSoftware from "./pages/codebase_pages/flight-software.js";
 import HardwareSimulators from "./pages/codebase_pages/hardware-simulators.js";
 import KubosBuilder from "./pages/codebase_pages/kubos-builder.js";
 import CodebaseLibs from "./pages/codebase_pages/libs.js";
+import BountyBoard from "./pages/BountyBoard/BountyBoard.js";
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
           </Route>
           <Route path="kubos" element={<Kubos />} />
           <Route path="linuxtutorial" element={<LinuxTutorial />} />
+          <Route path="bountyboard" element={<BountyBoard /> } />
         </Routes>
       </div>
     </HashRouter>
