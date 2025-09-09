@@ -2,6 +2,8 @@
 
 Creates a website that aims provide a comprehensive onboarding tutorial 
 
+Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.github.io/software-onboarding/)
+
 - [ ] Write tutorial for Windows setup
 - [ ] Write tutorial for Mac setup
 - [x] Write tutorial for Linux setup
