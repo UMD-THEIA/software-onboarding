@@ -20,6 +20,7 @@ Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.gi
     - [ ] Breakdown of the provided libraries (flight-software/libs)
   - [ ] A rundown of all built simulators in hardware-simulators
   - [ ] Using kubos-builder
+- [ ] Hardware Guides (compile / use OBC)
 - [ ] Rust Tutorial
 - [ ] Linux Tutorial (basic commands)
-- [ ] Bounty Board (for tasks)
+- [x] Bounty Board (for tasks)

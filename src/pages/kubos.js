@@ -9,7 +9,7 @@ export default function Kubos() {
       <h1>KubOS Ecosystem</h1>
       <div className="leftText">
 
-        <p>Documentation: <a href="https://docs.kubos.com/1.21.0/index.html" rel="noreferrer" target="_blank" >https://docs.kubos.com/1.21.0/index.html</a></p>
+        <p>Documentation: <a href="https://kubos-preservation-group.github.io/kubos/" rel="noreferrer" target="_blank" >https://kubos-preservation-group.github.io/kubos/</a></p>
 
         <p>KubOS is a collection of microservices that accomplish critical functionality required of flight software (FSW), run within a highly fault tolerant and
           recoverable operating system, and provide a safe and effective development environment for mission specific FSW applications</p>

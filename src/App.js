@@ -28,6 +28,11 @@ import KubosBuilder from "./pages/codebase_pages/kubos-builder.js";
 import CodebaseLibs from "./pages/codebase_pages/libs.js";
 import BountyBoard from "./pages/BountyBoard/BountyBoard.js";
 
+import Tutorials from "./pages/tutorials/tutorials.js";
+import TutorialsHome from "./pages/tutorials/TutorialsHome.js"
+import RegisterMissionAppTutorial from "./pages/tutorials/RegisterMissionApp.js";
+import FirstMissionAppTutorial from "./pages/tutorials/FirstMissionApp.js";
+
 
 function App() {
 
@@ -61,6 +66,11 @@ function App() {
           <Route path="kubos" element={<Kubos />} />
           <Route path="linuxtutorial" element={<LinuxTutorial />} />
           <Route path="bountyboard" element={<BountyBoard /> } />
+          <Route path="tutorials" element={<Tutorials />}>
+            <Route index="" element={<TutorialsHome />} />
+            <Route path="first-mission-app" element={<FirstMissionAppTutorial />} />
+            <Route path="app-register" element={<RegisterMissionAppTutorial />} />
+          </Route>
         </Routes>
       </div>
     </HashRouter>
