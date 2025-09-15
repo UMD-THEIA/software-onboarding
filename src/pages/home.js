@@ -69,6 +69,13 @@ const allGuides = [
     url: "/codebase",
   },
   {
+    image: "/images/tux.png",
+    title: "Basic Linux Terminal Tutorial",
+    date: "September 15th, 2025",
+    summary: "A guide on the basics of using the terminal.",
+    url: "/linuxtutorial",
+  },
+  {
     image: "/images/git.png",
     title: "Introduction to Git/Github",
     date: "March 19, 2025",
@@ -108,6 +115,7 @@ const importantGuides = [
     summary: "A breakdown of the code we use",
     url: "/codebase",
   },
+
   {
     image: "/images/git.png",
     title: "Introduction to Git/Github",

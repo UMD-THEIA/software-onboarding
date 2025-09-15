@@ -4,7 +4,13 @@ import { Link } from "react-router-dom"
 import './tutorial.css'
 import TutorialNote from './TutorialNote.js'
 
-
+function CustomLink({ to, children, ...props }) {
+  return (
+    <Link to={to} {...props}>
+      {children}
+    </Link>
+  )
+}
 
 export default function DockerTutorial() {
 
@@ -32,10 +38,10 @@ kubos  | payload-service is running successfully`;
   return (
     <>
       <div className="leftText">
-        <h1>Setting up + Running <a href="../#/codebase/docker-kubos">docker-kubos</a></h1>
+        <h1>Setting up + Running <CustomLink to="/codebase/docker-kubos">docker-kubos</CustomLink></h1>
         <h3 className="lastUpdate">Last updated September 10th, 2025</h3>
         <TutorialNote>
-          <p> This tutorial picks up from <a href="../#/setup">Setup</a>. Please start from there if you haven't already.</p>
+          <p> This tutorial picks up from <CustomLink to="/setup">Setup</CustomLink>. Please start from there if you haven't already.</p>
         </TutorialNote>
 
         <p className="tutorial-text">From inside vscode, you should be able to bring up the terminal. You can then run the following command to only start up the KubOS container.</p>

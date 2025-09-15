@@ -1,8 +1,17 @@
 import '../../App.css'
 import TaskCarousel from "./TaskCarousel.js"
 import "./BountyBoard.css";
+import { Link } from "react-router-dom"
 
 
+
+function CustomLink({ to, children, ...props }) {
+  return (
+    <Link to={to} {...props}>
+      {children}
+    </Link>
+  )
+}
 
 const easyTasks = [
   // {
@@ -20,8 +29,8 @@ const easyTasks = [
         Mission applications are user-created programs which are used to control satellite
         behavior and execute mission logic. This tutorial guides the user through the process
         of creating a basic mission application using Python3. Afterward, you will be rewriting
-        it in <a href="#/rust" data-discover="true">Rust</a> by yourself. For more information
-        about this assignment, visit its <a href="#/tutorials/first-mission-app" data-discover="true">dedicated page</a>!
+        it in <CustomLink to="/rust">Rust</CustomLink> by yourself. For more information
+        about this assignment, visit its <CustomLink to="/tutorials/first-mission-app">dedicated page</CustomLink>!
       </>
     ),
   },
@@ -32,7 +41,7 @@ const easyTasks = [
     details: (
       <>
         The Kubos applications service is responsible for monitoring and managing all mission applications for a system.
-        For more information about this assignment, visit its <a href="#/tutorials/app-register" data-discover="true">dedicated page</a>!
+        For more information about this assignment, visit its <CustomLink to="/tutorials/app-register">dedicated page</CustomLink>!
       </>
     ),
   },

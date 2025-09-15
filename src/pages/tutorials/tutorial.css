@@ -1,8 +1,10 @@
-.tutorial-text {
+.wiki {
     font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+
 }
 
 .admonition {
+    font-family: 'iawriter-mono', monospace;
     display: inline-block;
 }
 
