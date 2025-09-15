@@ -32,6 +32,7 @@ import Tutorials from "./pages/tutorials/tutorials.js";
 import TutorialsHome from "./pages/tutorials/TutorialsHome.js"
 import RegisterMissionAppTutorial from "./pages/tutorials/RegisterMissionApp.js";
 import FirstMissionAppTutorial from "./pages/tutorials/FirstMissionApp.js";
+import DockerTutorial from "./pages/tutorials/DockerTutorial.js";
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
           <Route path="bountyboard" element={<BountyBoard /> } />
           <Route path="tutorials" element={<Tutorials />}>
             <Route index="" element={<TutorialsHome />} />
+            <Route path="docker-setup" element={<DockerTutorial />} />
             <Route path="first-mission-app" element={<FirstMissionAppTutorial />} />
             <Route path="app-register" element={<RegisterMissionAppTutorial />} />
           </Route>

@@ -2,7 +2,7 @@ import '../../App.css'
 import React from "react";
 import CodeBlock from "../../CodeBlock";
 import "./setup.css";
-import { GithubSSH, GitClone } from "./common-setup"
+import { GithubSSH, GitClone, VsCode } from "./common-setup"
 
 export default function Ubuntu() {
     const dockerInstall = `sudo apt-get update
@@ -47,6 +47,8 @@ sudo apt-get update`;
       <p className='setupText'>Install Rust. Visit <a href="https://www.rust-lang.org/tools/install" target="_blank" rel="noreferrer">this website</a> for information</p>
 
       <GitClone />
+
+      <VsCode />
       <h3 className='setupText'>Fin.</h3>
     </div>
     

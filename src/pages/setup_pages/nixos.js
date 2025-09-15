@@ -2,7 +2,7 @@ import '../../App.css'
 import React from "react";
 import CodeBlock from "../../CodeBlock";
 import "./setup.css";
-import { GithubSSH, GitClone } from "./common-setup"
+import { GithubSSH, GitClone, VsCode } from "./common-setup"
 
 
 export default function Nixos() {
@@ -72,6 +72,7 @@ pkgs.mkShell {
       
       <p className='setupText'>When you're finished, simply run <code>exit</code> to leave the environment, restoring your original system state.</p>
       <GitClone />
+      <VsCode />
       <h3 className='setupText'>Fin.</h3>
     </div>
   );

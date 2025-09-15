@@ -5,6 +5,11 @@ import TokenCarousel from '../Tokens/TokenCarousel';
 
 const tokens = [
   {
+    title: "Running docker-kubos",
+    date: "September 15, 2025",
+    url: "/tutorials/docker-setup"
+  },
+  {
     title: "First Mission App",
     date: "September 10, 2025",
     url: "/tutorials/first-mission-app"

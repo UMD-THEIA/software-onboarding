@@ -34,3 +34,14 @@ export function GitClone() {
     </>
   )
 }
+
+export function VsCode(){
+  return (
+    <>
+      <h3 className='setupText'>Using VsCode</h3>
+      <p className='setupText'>I recommend using VsCode on Linux for programming but you are free to use whatever you want. Assuming vscode is already installed and <code>docker-kubos</code> is in <code>/home/marco/THEIA/Software/docker-kubos</code>:</p>
+      <p className='setupText'>Run the following command to open vscode in the main repo:</p>
+      <CodeBlock language="shell" code={`code /home/marco/THEIA/Software/docker-kubos`} />
+    </>
+  )
+}
