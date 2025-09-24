@@ -234,7 +234,7 @@ export default function FirstMissionAppTutorial() {
         <p>We’ll need to pass our application this path when we go to run it locally.</p>
 
         <h2>Querying a Service</h2>
-        <p>For this tutorial, we’ll be querying the <ExternalLink to="https://kubos-preservation-group.github.io/kubos/ecosystem/services/monitor-service.html">monitor service</ExternalLink>to make sure it is successfully up and running.</p>
+        <p>For this tutorial, we’ll be querying the <ExternalLink to="https://kubos-preservation-group.github.io/kubos/ecosystem/services/monitor-service.html">monitor service</ExternalLink> to make sure it is successfully up and running.</p>
         <p>The monitor service is a unique hardware service which communicates with the OBC itself in order to obtain information about current processes running and the amount of memory both available and generally present on the system. It is unique because it is not tied to a particular hardware device and can, instead, be run on any supported OBC (or in this instance, the local dev environment). Worth noting, the process of communicating with this service is the same as communicating with any other core or hardware service.</p>
         <p>We intend for this to be an ad-hoc action, so we’ll be adding code to the on-command section of our program.</p>
         <p>The all KubOS core services provide a <code>ping</code> query which can be used to verify that the service is currently running on the expected port. The request has the following format:</p>
@@ -244,8 +244,7 @@ export default function FirstMissionAppTutorial() {
         <p>To make the communication process simpler, we’ll be using the <ExternalLink to="https://kubos-preservation-group.github.io/kubos/ecosystem/apps/python-app-api.html">Python app API</ExternalLink> to send our GraphQL requests.</p>
         <p>For each request, it:</p>
         <ul>
-          <li>Looks up the HTTP address of the service name which is given from the system’s
-            <ExternalLink to="https://kubos-preservation-group.github.io/kubos/ecosystem/services/service-config.html">config.toml</ExternalLink> file</li>
+          <li>Looks up the HTTP address of the service name which is given from the system's <ExternalLink to="https://kubos-preservation-group.github.io/kubos/ecosystem/services/service-config.html">config.toml</ExternalLink> file</li>
           <li>Wraps the given request into a proper HTTP packet and sends it to the target service</li>
           <li>Parses the response message and checks for errors</li>
           <li>Returns the message payload in the <code>"data"</code> field if the request was successful</li>
@@ -299,6 +298,8 @@ export default function FirstMissionAppTutorial() {
         </ul>
         <p>Our file should look like this:</p>
         <CodeBlock language={"toml"} code={`name = "my-mission-app"\nexecutable = "my-mission-app.py"\nversion = "1.0"\nauthor = "Me"`} />
+        <h2>What's next?</h2>
+        <p>Please implement your own mission application in Rust. An existing example exists on the conainer at <code>/home/kubos/.kubos/kubos/examples/rust-mission-app/</code> if you need an example. However, please take this opportunity to get some practice writing Rust code.</p>
       </div>
     </>
   );
