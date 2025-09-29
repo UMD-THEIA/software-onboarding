@@ -46,6 +46,14 @@ kubos  | payload-service is running successfully`;
 
         <p className="tutorial-text">From inside vscode, you should be able to bring up the terminal. You can then run the following command to only start up the KubOS container.</p>
         <CodeBlock language={"bash"} code={"docker compose up kubos"} />
+        <TutorialNote>
+          <p>
+            In the <code>docker-compose.yaml</code> file located in <code>docker-kubos</code>, you'll find a top-level section called <code>services</code>. 
+            Under it, you'll see five defined services: <code>kubos</code>, <code>adcs</code>, <code>payload</code>, <code>gps</code>, and <code>pdu</code>. 
+            You can run any one (or multiple) of these containers by specifying their names at the end of a 
+            <code>docker compose up [service]</code> command. For example, the command above runs only the <code>kubos</code> service.
+          </p>
+        </TutorialNote>
         <p className='tutorial-text'>You should see a log like:</p>
         <CodeBlock language={"bash"} code={dockerStartup} />
         <p className="tutorial-text">
