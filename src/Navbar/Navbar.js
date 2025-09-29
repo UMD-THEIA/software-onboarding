@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <img src={imagePath} class="patch" alt="" /> THEIA Software
+        <img src={imagePath} className="patch" alt="" /> THEIA Software
       </Link>
       <ul>
         <CustomLink to="/">Home</CustomLink>
