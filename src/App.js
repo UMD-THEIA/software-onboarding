@@ -7,7 +7,7 @@ import Navbar from './Navbar/Navbar.js'
 import Home from "./pages/home.js"
 import Rust from "./pages/rust.js"
 import Docker from "./pages/docker.js"
-import Github from "./pages/github.js"
+import Git from "./pages/git.js"
 import Setup from "./pages/setup.js"
 import Kubos from "./pages/kubos.js"
 import LinuxTutorial from "./pages/linux.js"
@@ -55,7 +55,7 @@ function App() {
           </Route>
           <Route path="rust" element={<Rust />} />
           <Route path="docker" element={<Docker />} />
-          <Route path="github" element={<Github />} />
+          <Route path="git" element={<Git />} />
           <Route path="codebase" element={<Codebase />}>
             <Route index="" element={<CodebaseHome />} />
             <Route path="docker-kubos" element={<DockerKubos />} />
