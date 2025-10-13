@@ -62,7 +62,7 @@ const allGuides = [
     url: "/kubos",
   },
   {
-    image: "/images/THEIA_PATCH_EXPORT 1.png",
+    image: "/images/THEIA_PATCH_EXPORT.png",
     title: "Walkthrough of THEIA Software Codebase",
     date: "March 19, 2025",
     summary: "A breakdown of the code we use",
@@ -109,7 +109,7 @@ const importantGuides = [
   },
 
   {
-    image: "/images/THEIA_PATCH_EXPORT 1.png",
+    image: "/images/THEIA_PATCH_EXPORT.png",
     title: "Walkthrough of THEIA Software Codebase",
     date: "March 19, 2025",
     summary: "A breakdown of the code we use",
