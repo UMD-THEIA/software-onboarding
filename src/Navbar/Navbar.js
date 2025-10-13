@@ -9,17 +9,16 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <Link to="/" className="site-title">
-        <img src={imagePath} className="patch" alt="" /> THEIA Software
-      </Link>
+      <Link to="/" className="site-title"> <img src={imagePath} class="patch" alt="" /> THEIA Software</Link>
       <ul>
         <CustomLink to="/">Home</CustomLink>
         <CustomLink to="/setup">Setup</CustomLink>
+        {/* <CustomLink to="/docker">Docker</CustomLink> */}
         <CustomLink to="/tutorials">Tutorials</CustomLink>
         <CustomLink to="/codebase">Codebase</CustomLink>
         <CustomLink to="/bountyboard">Tasks</CustomLink>
-        <CustomLink to="/github">Github</CustomLink>
-        <div className="header-tabs"><a href="https://github.com/UMD-THEIA" rel="noreferrer" target="_blank"><FaGithub size={25} className="ul-icon" /></a></div>
+        {/* <CustomLink to="/github">Github</CustomLink> */}
+        <div className="header-tabs"><a href="https://github.com/UMD-THEIA" target="_blank" rel="noreferrer"><FaGithub size={25} className="ul-icon" /></a></div>
       </ul>
     </nav>
   )

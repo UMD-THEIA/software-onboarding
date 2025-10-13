@@ -1,0 +1,18 @@
+.gitTutorial {
+  text-align: left;
+}
+
+.gitflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gitImage {
+  max-width: 25%;
+}
+
+.wip{
+  color: red;
+  font-style: italic;
+}

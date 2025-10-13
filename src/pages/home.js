@@ -80,7 +80,7 @@ const allGuides = [
     title: "Introduction to Git/Github",
     date: "March 19, 2025",
     summary: "A guide on how to use Git/Github",
-    url: "/github",
+    url: "/git",
   },
 ];
 
@@ -121,7 +121,7 @@ const importantGuides = [
     title: "Introduction to Git/Github",
     date: "March 19, 2025",
     summary: "A guide on how to use Git/Github",
-    url: "/github",
+    url: "/git",
   },
   {
     image: "/images/rustacean-banner.png",
