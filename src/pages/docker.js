@@ -120,6 +120,23 @@ networks:
           <li><code>--name my-running-app</code>: Assigns a friendly name to your container.</li>
           <li><code>my-ubuntu-app</code>: The image we built earlier.</li>
         </ul>
+        <h2>Listing and Stopping Running Containers</h2>
+        <p>After running your container, you might want to check which containers are currently active or stop one that's running.</p>
+
+        <p><b>To list all running containers:</b></p>
+        <CodeBlock language="shell" code={`docker ps`} />
+        <p>This command displays a table of running containers, showing their container IDs, names, images, ports, and status.</p>
+
+        <p><b>To list all containers (including stopped ones):</b></p>
+        <CodeBlock language="shell" code={`docker ps -a`} />
+
+        <p><b>To stop a running container:</b></p>
+        <CodeBlock language="shell" code={`docker stop my-running-app`} />
+        <p>This stops the container gracefully. You can replace <code>my-running-app</code> with either the container name or its ID.</p>
+
+        <p><b>To remove a stopped container:</b></p>
+        <CodeBlock language="shell" code={`docker rm my-running-app`} />
+        <p>This deletes the container completely. It won’t remove your image, only the stopped container instance.</p>
         <h2>Accessing the Container's Environment</h2>
         <p>A powerful aspect of Docker is the ability to get an interactive shell inside a running container. This is great for troubleshooting or running commands manually. Use the following command:</p>
         <CodeBlock language="shell" code={`docker exec -it my-running-app /bin/bash`} />
@@ -203,7 +220,7 @@ networks:
         <p><b>Stopping Containers</b></p>
         <p>You can run <code>docker compose stop</code> which stops the running containers but leaves the containers, networks, and volumes intact.
           You can restart them later with <code>docker compose start</code></p>
-        <p><code>docker compose down</code> instead stops and removes containers, networks, and default volumes created by <code>up</code>. 
+        <p><code>docker compose down</code> instead stops and removes containers, networks, and default volumes created by <code>up</code>.
           This is useful if you want to completely tear down your application environment and start fresh later.</p>
       </div>
     </>

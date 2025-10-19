@@ -48,9 +48,9 @@ kubos  | payload-service is running successfully`;
         <CodeBlock language={"bash"} code={"docker compose up kubos"} />
         <TutorialNote>
           <p>
-            In the <code>docker-compose.yaml</code> file located in <code>docker-kubos</code>, you'll find a top-level section called <code>services</code>. 
-            Under it, you'll see five defined services: <code>kubos</code>, <code>adcs</code>, <code>payload</code>, <code>gps</code>, and <code>pdu</code>. 
-            You can run any one (or multiple) of these containers by specifying their names at the end of a 
+            In the <code>docker-compose.yaml</code> file located in <code>docker-kubos</code>, you'll find a top-level section called <code>services</code>.
+            Under it, you'll see five defined services: <code>kubos</code>, <code>adcs</code>, <code>payload</code>, <code>gps</code>, and <code>pdu</code>.
+            You can run any one (or multiple) of these containers by specifying their names at the end of a
             <code>docker compose up [service]</code> command. For example, the command above runs only the <code>kubos</code> service.
           </p>
         </TutorialNote>
@@ -77,6 +77,18 @@ kubos  | payload-service is running successfully`;
             If you see <code>Error response from daemon: container [...] is not running</code>,
             it means the container failed to start or was stopped.
             Try running <code>docker compose up kubos</code> again and check the logs for errors.
+          </p>
+        </TutorialNote>
+        <p>
+          You are now inside the Docker container - any commands you run from this point forward will execute within the isolated environment provided by 
+          the container. This environment contains all the dependencies, tools, and configurations required for the <CustomLink to="/tutorials/first-mission-app">First Mission App</CustomLink> tutorial, so you can follow along without having to 
+          install or configure everything on your local system.
+        </p>
+        <TutorialNote>
+          <p>
+            The Docker container will continue running in the background until you stop it. 
+            When you're done using it, make sure to shut down the container to free up resources. 
+            For details on how to list running containers and stop them safely, refer to the <CustomLink to="/docker">Docker guide</CustomLink>.
           </p>
         </TutorialNote>
       </div>
