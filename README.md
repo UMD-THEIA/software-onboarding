@@ -14,7 +14,11 @@ Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.gi
   - [x] Update Tutorials to opening up docker-kubos with vscode
 - [ ] Misc Guides
   - [x] Docker Tutorial
-  - [ ] Git Tutorial
+  - [ ] !! Git Tutorial
+    - [x] Git pull
+    - [ ] Git stash
+    - [x] git commit/push
+    - [ ] git submodules
   - [x] Kubos Tutorial (copy from Notion)
   - [ ] Hardware Guides (compile / use OBC)
   - [ ] Rust Tutorial
@@ -27,8 +31,8 @@ Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.gi
   - [ ] A rundown of all built simulators in hardware-simulators
 - [x] Bounty Board (for tasks)
   - [x] !! Write out Onboarding Tasks
-  - [ ] !! Write out Groundstation Tasks
+  - [ ] Write out Groundstation Tasks
 - [ ] Tutorials
   - [x] docker-kubos usage
-  - [ ] First Mission App
+  - [x] First Mission App
   - [ ] Register your first App
