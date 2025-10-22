@@ -85,6 +85,15 @@ docker run -d --name pdu --network=wires pdu-simulator`;
     image: payload-simulator
     networks:
       - wires`;
+    
+    const compose3 = `- "8000:8000" # app-service
+- "8010:8010" # scheduler-service
+- "8020:8020" # telemetry-service
+- "8030:8030" # monitor-service
+- "8110:8110" # gps-service
+- "8120:8120" # pdu-service
+- "8130:8130" # payload-service
+- "8140:8140" # adcs-service`;
 
   return (
     <>
@@ -181,10 +190,24 @@ docker run -d --name pdu --network=wires pdu-simulator`;
 
         <h3>2. Exposing Ports for Kubos Services</h3>
 
-        <CodeBlock language="yaml" code={`    ports:\n      - "8110:8110"\n      - "8120:8120"\n      - "8130:8130"\n      - "8140:8140"`} />
+        <CodeBlock language="yaml" code={compose3} />
         <p>This maps ports from the container to the host machine, allowing GraphQL to be accessible from your host computer, outside of the container.</p>
         <p>These ports correspond to different Kubos services: </p>
+{/* 
+    - "8000:8000" # app-service
+      - "8010:8010" # scheduler-service
+      - "8020:8020" # telemetry-service
+      - "8030:8030" # monitor-service
+      - "8110:8110" # gps-service
+      - "8120:8120" # pdu-service
+      - "8130:8130" # payload-service
+      - "8140:8140" # adcs-service */}
+        
         <ul>
+          <li><code>8010</code> -&gt; App Service. Accessible from <u>http://localhost:8010/graphiql</u> when running.</li>
+          <li><code>8020</code> -&gt; Telemetry Service. Accessible from <u>http://localhost:8020/graphiql</u> when running.</li>
+          <li style={{ marginBottom: "15px" }}><code>8030</code> -&gt; Monitor Service. Accessible from <u>http://localhost:8030/graphiql</u> when running.</li>
+
           <li><code>8110</code> -&gt; GPS Service. Accessible from <u>http://localhost:8110/graphiql</u> when running.</li>
           <li><code>8120</code> -&gt; PDU Service. Accessible from <u>http://localhost:8120/graphiql</u> when running.</li>
           <li><code>8130</code> -&gt; Payload Service. Accessible from <u>http://localhost:8130/graphiql</u> when running.</li>
