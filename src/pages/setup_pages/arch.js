@@ -2,7 +2,7 @@ import '../../App.css'
 import React from "react";
 import CodeBlock from "../../CodeBlock";
 import "./setup.css";
-import { GithubSSH, GitClone, VsCode } from "./common-setup"
+import { GithubSSH, GitClone, VsCode, DockerGhcr} from "./common-setup"
 
 export default function ArchLinux() {
     const dockerInstall = `sudo pacman -Syu --noconfirm
@@ -39,6 +39,7 @@ sudo systemctl start docker`;
 
       <GitClone />
       <VsCode />
+      <DockerGhcr />
       <h3 className='setupText'>Fin.</h3>
     </div>
     );

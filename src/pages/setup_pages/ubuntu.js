@@ -2,7 +2,7 @@ import '../../App.css'
 import React from "react";
 import CodeBlock from "../../CodeBlock";
 import "./setup.css";
-import { GithubSSH, GitClone, VsCode } from "./common-setup"
+import { GithubSSH, GitClone, VsCode, DockerGhcr } from "./common-setup"
 
 export default function Ubuntu() {
     const dockerInstall = `sudo apt-get update
@@ -49,6 +49,8 @@ sudo apt-get update`;
       <GitClone />
 
       <VsCode />
+
+      <DockerGhcr />
       <h3 className='setupText'>Fin.</h3>
     </div>
     

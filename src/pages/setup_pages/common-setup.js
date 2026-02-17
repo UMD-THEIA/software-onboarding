@@ -24,6 +24,23 @@ export function GithubSSH() {
   );
 }
 
+export function DockerGhcr(){
+  return (
+    <>
+      <h3 className='setupText'>Setting up Github GHCR with a key</h3>
+      <p className='setupText'>First, generate a classic token in github. Go to <a rel="noreferrer" href="https://github.com/settings/tokens" target="_blank">Personal access tokens (classic)</a> and press "Generate new token" and click "Generate new token (Classic)"</p>
+      <p className='setupText'>In "Note" give it some name, then choose an expiration date and select a 'scope'. For the purpose of pulling a docker image from GHCR, you will need at least "read:packages" and "read:org" selected. Press generate token, and copy the the token.</p>
+      <p className='setupText'>Now go to the terminal, and enter <code>docker login ghcr.io</code></p>
+      <CodeBlock language="shell" code={`$ docker login ghcr.io\nUsername: yourUsername`} />
+      <p className='setupText'>Where prompted, enter your github username and then when it asks for the password, enter the token you generated above. Press enter and after a few seconds, you'll see "Login Succeeded".</p>
+      <p className='setupText'>Now, test that everything works by running the following command and seeing a similar output:</p>
+      <CodeBlock language="shell" code={`$ docker image pull ghcr.io/umd-theia/docker-kubos:v0.3.2\nv0.3.2: Pulling from umd-theia/docker-kubos\n...`} />
+      <p className='setupText'>If you see the following error, please let someone know:</p>
+      <CodeBlock language="shell" code={`$ docker image pull ghcr.io/umd-theia/docker-kubos:v0.3.2\nError response from daemon: Head "https://ghcr.io/v2/umd-theia/docker-kubos/manifests/v0.3.2": unauthorized`} />
+    </>
+  );
+}
+
 export function GitClone() {
   return (
     <>

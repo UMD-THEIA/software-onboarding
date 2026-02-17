@@ -2,7 +2,7 @@ import '../../App.css'
 import React from "react";
 import CodeBlock from "../../CodeBlock";
 import "./setup.css";
-import { GithubSSH, GitClone, VsCode } from "./common-setup"
+import { GithubSSH, GitClone, VsCode, DockerGhcr } from "./common-setup"
 
 export default function Windows() {
   return (<div>
@@ -81,6 +81,7 @@ export default function Windows() {
     </ul>
     <VsCode />
 
+    <DockerGhcr />
     <h3 className='setupText'>Fin.</h3>
   </div>
   );
