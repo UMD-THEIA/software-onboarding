@@ -1,14 +1,26 @@
 @font-face {
-    font-family: 'iawriter-mono';
-    src: url('fonts/iAWriterMonoS-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'iawriter-mono';
+  src: url('fonts/iAWriterMonoS-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  body {
-    font-family: 'iawriter-mono', monospace;
-  }
+body {
+  font-family: 'iawriter-mono', monospace;
+}
 
-  .leftText{
-    text-align: left;
+.leftText {
+  text-align: left;
+}
+
+.video-container {
+  width: 40%;
+  min-width: 300px;
+  /* adjust for mobile */
+}
+
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
