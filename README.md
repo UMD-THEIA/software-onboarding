@@ -5,7 +5,8 @@ Creates a website that aims provide a comprehensive onboarding tutorial
 Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.github.io/software-onboarding/)
 
 - [ ] Tutorials
-  - [ ] !! Write tutorial for Windows setup
+  - [x] Write tutorial for Windows setup
+    - [ ] Update Windows Tutorial (remove initial unspecific installation)
   - [ ] Write tutorial for Mac setup
   - [x] Write tutorial for Linux setup
     - [x] Ubuntu/Mint
@@ -25,7 +26,8 @@ Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.gi
   - [ ] !! Linux Tutorial (basic commands)
 - [ ] Walkthrough of THEIA Codebase
   - [x] Complete skeleton
-  - [x] Getting started with docker-kubos
+  - [x] Getting started with docker-kubos 
+    - [ ] Update or get rid of this (we no longer use docker for this)
   - [ ] Elements of flight-software
     - [ ] Breakdown of the provided libraries (flight-software/libs)
   - [ ] A rundown of all built simulators in hardware-simulators
