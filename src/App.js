@@ -22,6 +22,7 @@ import Windows from "./pages/setup_pages/windows.js"
 
 import CodebaseHome from "./pages/codebase_pages/home.js";
 import DockerKubos from "./pages/codebase_pages/docker-kubos.js";
+import NixDockerKubos from "./pages/codebase_pages/nix-docker-kubos.js";
 import FlightSoftware from "./pages/codebase_pages/flight-software.js";
 import HardwareSimulators from "./pages/codebase_pages/hardware-simulators.js";
 import KubosBuilder from "./pages/codebase_pages/kubos-builder.js";
@@ -59,6 +60,7 @@ function App() {
           <Route path="codebase" element={<Codebase />}>
             <Route index="" element={<CodebaseHome />} />
             <Route path="docker-kubos" element={<DockerKubos />} />
+            <Route path="nix-docker-kubos" element={<NixDockerKubos />} />
             <Route path="flight-software" element={<FlightSoftware />} />
             <Route path="hardware-simulators" element={<HardwareSimulators />} />
             <Route path="kubos-builder" element={<KubosBuilder />} />

@@ -28,6 +28,8 @@ Website: [https://umd-theia.github.io/software-onboarding/](https://umd-theia.gi
   - [x] Complete skeleton
   - [x] Getting started with docker-kubos 
     - [ ] Update or get rid of this (we no longer use docker for this)
+  - [x] docker-kubos Nix flake build (nix-docker-kubos)
+  - [x] kubos-builder (cross-compiling for the OBC)
   - [ ] Elements of flight-software
     - [ ] Breakdown of the provided libraries (flight-software/libs)
   - [ ] A rundown of all built simulators in hardware-simulators

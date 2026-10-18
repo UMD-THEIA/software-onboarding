@@ -4,7 +4,7 @@ import './navbar.css'
 import '../App.css'
 
 export default function Navbar() {
-  const imagePath = process.env.PUBLIC_URL + "/images/SATDEV-LOGO-EXPORT 1.png";
+  const imagePath = process.env.PUBLIC_URL + "/images/SATDEV-LOGO-EXPORT.png";
 
 
   return (

@@ -10,6 +10,11 @@ const tokens = [
     url: "/codebase/docker-kubos"
   },
   {
+    title: "docker-kubos (Nix)",
+    date: "October 18, 2026",
+    url: "/codebase/nix-docker-kubos"
+  },
+  {
     title: "flight-software",
     date: "March 20, 2025",
     url: "/codebase/flight-software"
@@ -21,7 +26,7 @@ const tokens = [
   },
   {
     title: "kubos-builder",
-    date: "March 20, 2025",
+    date: "October 18, 2026",
     url: "/codebase/kubos-builder"
   },
   {
